@@ -1,0 +1,44 @@
+body{
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+p,
+.test,
+ul{
+    border: 1px solid green;
+    padding: 10px;
+}
+
+.test,
+ul{
+    list-style: none;
+}
+
+li,
+.li-test{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Changing the display will show the different behavior for span tag */
+span{
+    /* display: block; */
+    display: inline-block;
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Changing display from flex to inline-flex shows the difference */
+.test{
+    /* display: flex; */
+    display: inline-flex;
+}
+
+ul{
+    display: inline-block;
+}
