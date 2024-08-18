@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* CSS for nav */
+.nav-container{
+    color: white;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    /* usiing justify-content to center nav horizontally */
+    justify-content: center;
+}
+  
+.nav{
+    width: 75%;
+    display:flex;
+    /* usiing justify-content to align date and links horizontally */
+    justify-content: space-between;
+}
+  
+.links{
+    display: flex;
+    /* usiing justify-content to align signup and login horizontally */
+    justify-content: flex-end;
+}
+  
+.login{
+    margin-left: 15px;
+}
+  
+/* CSS for demonstrating Main Axis */
+.main-axis{
+    border: 2px solid sienna;
+    background-color: lightblue;
+    height: 500px;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    /* using justify-content to align items horizontally*/
+    justify-content: space-around;
+    /* using align-items to align items vertically*/
+    align-items: center;
+}
+  
+.main-axis .item{
+    border: 2px solid sienna;
+    background-color: salmon;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+  
+/* CSS for demonstrating Cross Axis */
+.cross-axis{
+    border: 2px solid sienna;
+    background-color: lightblue;
+    height: 900px;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    /* Changing the axis using flex-direction*/
+    flex-direction: column;
+    /* using align-items to align items horizontally*/
+    align-items: center;
+    /* using justify-content to align items vertically*/
+    justify-content: space-around;
+}
+  
+.cross-axis .item{
+    border: 2px solid sienna;
+    background-color: salmon;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+}
