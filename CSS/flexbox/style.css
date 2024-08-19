@@ -30,6 +30,38 @@
 .login{
     margin-left: 15px;
 }
+
+/* CSS for demonstrating flex property */
+.flex-container{
+    border: 4px solid #ffcc5c;
+    background-color: #ffeead;
+    margin: 20px;
+    display: flex;
+}
+
+.flex-container div{
+    color: #ffeead;
+    padding: 10px;
+    text-align: center;
+    /* flex is a shorthand for 3 properties flex-grow, flex-shrink and flex-basis */
+    /* writing flex: 1 --> flex: 1 1 0 (flex-grow: 1, flex-shrink: 1, flex-basis: 0) */
+    flex: 1;
+}
+
+.home{
+    background-color: #96ceb4;
+    /* flex-grow: ;
+    flex-shrink: ;
+    flex-basis: ; */
+} 
+
+.profile{
+    background-color: #ff6f69;
+}
+
+.contact{
+    background-color: #96ceb4;
+}
   
 /* CSS for demonstrating Main Axis */
 .main-axis{
