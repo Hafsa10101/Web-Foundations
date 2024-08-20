@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
 }
 
 .profile-image {
@@ -45,4 +48,22 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 15px
 }
+
+.left-align{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right-align{
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+/* I solved using auto margin, but it can also be solved using space-between. */
