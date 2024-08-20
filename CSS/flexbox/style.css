@@ -108,3 +108,87 @@
     width: 150px;
     padding: 5px;
 }
+
+/* CSS for demonstrating gap and align-self property */
+.container{
+    border: 4px solid brown;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adds space between items */
+    gap: 10px;
+}
+  
+.container div{
+    border: 4px solid brown;
+    height: 50px;
+    width: 50px;
+}
+  
+.container .two{
+    /* targets the specified item to change it's alignment */
+    align-self: flex-start;
+}
+
+/* CSS for demonstrating how flexbox changes the width 'Hypothetical size' */
+.row {
+    list-style-type: none;
+    padding: 16px;
+}
+  
+.l-item {
+    height: 50px;
+    border: 2px solid;
+    border-radius: 4px;
+    background: hotpink;
+    margin: 16px;
+}
+  
+.flex-wrapper {
+    display: flex;
+}
+    
+.l-item {
+    width: 2000px;
+}
+
+/* CSS for demonstrating the effect to auto margin in flexbox */
+.navbar{
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    gap: 15px;
+}
+  
+.logo{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    /* here setting margin to auto takes up the extra space and apply it to the elements margin */
+    margin-right: auto;
+}
+
+/* CSS for demonstrating flex-wrap */
+.outer{
+    border: 4px solid brown;
+    margin: 10px;
+    height: 1000px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    /* moves the items into next row without shrinking */
+    flex-wrap: wrap;
+    /* used to align the content (group for rows) */
+    align-content: center;
+}
+  
+.outer div{
+    border: 4px solid brown;
+    flex-basis: 200px;
+    height: 200px;
+}
