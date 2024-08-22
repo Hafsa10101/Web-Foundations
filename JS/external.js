@@ -131,3 +131,17 @@ console.log(numStr2 / numStr1); // output: 2, 20 / 10 = 2
 console.log(num2 * numStr1); // output: 200, 20 * 10 = 200
 console.log(numStr2 - numStr1); // output: 10, 20 - 10 = 10
 console.log(numStr2 + numStr1); // output: 2010, 20 + 10 = 2010 (string concatenation)
+
+
+/* NaN: Not-a-Number, it is a special value in Js used to represent a result that is not a valid number.
+the type of NaN is number
+NaN is not equal to any number, including itself
+isNaN() is used to detect NaN values */
+
+console.log(100 / "Apple"); // output: NaN, as the result of expression is not a valid number
+
+console.log(isNaN("Hafsa")); // output: true, as Hafsa is not a valid number
+
+console.log(NaN === NaN); // output: false, as NaN is unique and it is the only value in Js that is not equal to itself
+
+console.log(typeof NaN); // output: number, the type of NaN is number
