@@ -21,7 +21,36 @@ c. Backticks: `Hello`. */
 // Double and single quotes are “simple” quotes. There’s practically no difference between them in JavaScript.
 // Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}.
 let firstName = "Hafsa";
-console.log(`Hello, ${firstName}.`);
+
+// Strings declared using `` are called template literal
+// we can embed js in them & can declare them over multiple lines
+console.log(`Hi, ${firstName}.`);
+
+// Concatenating string using template literal and +
+let greeting = "Hello";
+let name = "Hafsa";
+console.log(greeting + ", " + name); // concatenation using +
+console.log(`${greeting}, ${name}`); // concatenation using template literal, have better readability
+
+// including expressions in string
+let hours = 4;
+console.log(`I study ${hours * 60} minutes everyday`);
+
+// multiline string using ``
+let mulLineStr = `Hello, everyone.
+My name is Hafsa.
+I am a web developer.`; // Template literals respect the line breaks, to have equivalent output using '' & "" we need to use line break character \n
+console.log(mulLineStr);
+
+// including quotes in strings
+console.log(`She said, "They are very mean".`); // method one: using different quotations
+console.log("She said, \"They are mean\"."); // method two: escaping character using \
+
+// Converting numeric string to number and vice-versa
+let numStr = "12345";
+let num = 12345;
+console.log(typeof Number(numStr)); // type changed to number
+console.log(typeof String(num)); // type changed to string
 
 // 4: Boolean - The boolean type has only two values: true and false.
 let isTrue = true;
