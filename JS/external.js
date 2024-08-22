@@ -91,10 +91,12 @@ console.log(pow);
 // Operator precedence: describes the order in which operators are performed in an arithmetic operation
 /* The operator precedence from highest to lowest are as follows:
 1. ++, -- (postfix)
-2. **
-3. *, /, %
-4. +, - 
-5. ++, -- (prefix)  
+2. +, - (unary)
+3. **
+4. *, /, %
+5. +, - (binary)
+6. ++, -- (prefix)  
+7. =
 If and expression container operator with same level of precedence then the evaluation proceeds from left to right.
 When using parentheses the operations inside he parentheses are computed first. */
 
@@ -195,3 +197,24 @@ console.log(c);
 
 c /= 2; // division assignment: Divides the variable value on the left by the value on the right, and returns the new variable value
 console.log(c);
+
+
+// unary +
+// when unary + is added before a number is doesn't do anything, but if it is added before something that is not a number it converts it to a number
+// in such cases it acts like Number() method
+console.log(+true); // output: 1
+
+let i = '3';
+let j = '2';
+console.log(i + j); // output: 32
+console.log(+i + +j); // output: 5
+
+
+// Bitwise operators
+// AND ( & )
+// OR ( | )
+// XOR ( ^ )
+// NOT ( ~ )
+// LEFT SHIFT ( << )
+// RIGHT SHIFT ( >> )
+// ZERO-FILL RIGHT SHIFT ( >>> )
