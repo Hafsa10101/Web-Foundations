@@ -145,3 +145,14 @@ console.log(isNaN("Hafsa")); // output: true, as Hafsa is not a valid number
 console.log(NaN === NaN); // output: false, as NaN is unique and it is the only value in Js that is not equal to itself
 
 console.log(typeof NaN); // output: number, the type of NaN is number
+
+
+// == vs ===
+console.log(5 == "5"); // output: true, changes the type of "5" from string to number then compares
+console.log(5 === "5"); // output: false
+
+console.log(1 == true); // output: true, changes the type of true from boolean to number then compares
+console.log(1 === true);
+
+/* == (Equality Operator): Compares two values for equality, but it coerces (changes) their types if they are different.
+=== (Strict Equality Operator): Compares two values for equality without changing their types. Both the value and type must be the same. */
