@@ -157,3 +157,13 @@ console.log(1 === true);
 /* == (Equality Operator): Compares two values for equality, but it coerces (changes) their types if they are different.
 === (Strict Equality Operator): Compares two values for equality without changing their types. Both the value and type must be the same. */
 // Note: Comparing two Js object will always return false, doesn't matters if we use == or ===.
+
+// useful methods for numbers
+// toFixed(): used to round numbers to a fixed number of decimal places
+let decimal = 0.24675324675324675;
+console.log(decimal.toFixed(2));
+
+// Number(): to convert numerical strings to number datatype
+let str = "100";
+console.log(typeof str);
+console.log(typeof Number(str));
