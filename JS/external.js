@@ -97,3 +97,37 @@ console.log(pow);
 5. ++, -- (prefix)  
 If and expression container operator with same level of precedence then the evaluation proceeds from left to right.
 When using parentheses the operations inside he parentheses are computed first. */
+
+
+// Adding numbers and strings
+// Js uses + operator for both addition and concatenation
+let num1 = 10;
+let num2 = 20;
+
+let numStr1 = "10";
+let numStr2 = "20";
+
+// if we add two numbers, the result will be a number
+console.log(num1 + num2); // output: 30
+
+// if we add two strings, the result will be a string concatenation
+console.log(numStr1 + numStr2); // output: 1020
+
+// if we add a number and a string, the result will be a string concatenation
+console.log(num1 + numStr2); // output: 1020
+
+/* Evaluation will be done from left to right: so first there is a string added to a number (this will result in string concatenation and the result will be a string as seen on line 117), 
+then the result string will be added to the number (this will again result in string concatenation)
+Hence, we got the output as - The result is: 1020 */
+console.log("The result is: " + num1 + num2); // output: The result is: 1020
+
+/* Evaluation will be done from left to right: so the first operand is a number added to the second operand which is also a number (so here normal addition will take place as both are numbers) 
+then the result which is a number will be added to the third operand which is a string (here as one is number and other is string, string concatenation will happen)
+Hence, we got the output as - 3010 */
+console.log(num1 + num2 + numStr1); // output: 3010
+
+// Other arithmetic operations (except +) on a numeric string will result in a mathematical operation. Js will convert the numeric strings into number and perform the arithmetic operation
+console.log(numStr2 / numStr1); // output: 2, 20 / 10 = 2
+console.log(num2 * numStr1); // output: 200, 20 * 10 = 200
+console.log(numStr2 - numStr1); // output: 10, 20 - 10 = 10
+console.log(numStr2 + numStr1); // output: 2010, 20 + 10 = 2010 (string concatenation)
