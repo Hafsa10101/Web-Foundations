@@ -158,6 +158,7 @@ console.log(1 === true);
 === (Strict Equality Operator): Compares two values for equality without changing their types. Both the value and type must be the same. */
 // Note: Comparing two Js object will always return false, doesn't matters if we use == or ===.
 
+
 // useful methods for numbers
 // toFixed(): used to round numbers to a fixed number of decimal places
 let decimal = 0.24675324675324675;
@@ -167,3 +168,20 @@ console.log(decimal.toFixed(2));
 let str = "100";
 console.log(typeof str);
 console.log(typeof Number(str));
+
+
+// Assignment operators
+let c = 5; // assignment operator
+console.log(c);
+
+c += 2; // addition assignment: adds the value on the right to the variable on the left and returns the new value to the variable
+console.log(c);
+
+c -= 2; // subtraction assignment: subtracts the value on the right to the variable on the left and returns the new value to the variable
+console.log(c);
+
+c *= 2; // multiplication assignment: multiplies the variable value on the left by the value on the right, and returns the new variable value
+console.log(c);
+
+c /= 2; // division assignment: Divides the variable value on the left by the value on the right, and returns the new variable value
+console.log(c);
