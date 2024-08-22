@@ -156,3 +156,4 @@ console.log(1 === true);
 
 /* == (Equality Operator): Compares two values for equality, but it coerces (changes) their types if they are different.
 === (Strict Equality Operator): Compares two values for equality without changing their types. Both the value and type must be the same. */
+// Note: Comparing two Js object will always return false, doesn't matters if we use == or ===.
