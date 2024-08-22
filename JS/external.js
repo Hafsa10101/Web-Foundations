@@ -44,3 +44,56 @@ const max = 57;
 let actual = max - 13;
 let percentage = actual / max;
 console.log(percentage); // if i write percentage directly in the console it will give me the output
+
+
+// Arithmetic Operators
+let x = 5;
+let y = 2;
+
+// x and y are operand and + is the operator
+let sum = x + y; // addition operator(+)
+console.log(sum);
+
+let difference = x - y; // subtraction operator(-)
+console.log(difference);
+
+let product = x * y; // multiplication operator(*)
+console.log(product);
+
+let quotient = x / y; // division operator(/)
+console.log(quotient);
+
+let remainder = x % y; // modulus operator(%)
+console.log(remainder);
+
+let preIncrement = ++x; // increment operator(++), in this case pre-increment, means value will first be incremented then assigned to the variable
+console.log(preIncrement);
+
+let preDecrement = --x; // decrement operator(--), in this care pre-decrement, means value will first be decremented then assigned to the variable
+console.log(preDecrement);
+
+let postIncrement = x++; // post-increment, means value is first assigned to the variable then it will be incremented
+// here, first the value of x i.e 5 is assigned to the postIncrement variable, so postIncrement variable contains the value 5 then after that the value of x will increment by 1 making the new value of x as 6
+console.log(postIncrement); // output: 5
+console.log(x); // output: 6
+
+let postDecrement = x--; // post-decrement, means value is first assigned to the variable then it will be decremented
+// here, first the value of x i.e 6 is assigned to the postDecrement variable, so postDecrement variable contains the value 6 then after that the value of x will decrement by 1 making the new value of x as 5
+console.log(postDecrement); // output: 6
+console.log(x); // output: 5
+
+let power = x ** 2; // exponentiation operator(**), x²
+console.log(power);
+
+let pow = Math.pow(x, 2); // same as ** operator
+console.log(pow);
+
+// Operator precedence: describes the order in which operators are performed in an arithmetic operation
+/* The operator precedence from highest to lowest are as follows:
+1. ++, -- (postfix)
+2. **
+3. *, /, %
+4. +, - 
+5. ++, -- (prefix)  
+If and expression container operator with same level of precedence then the evaluation proceeds from left to right.
+When using parentheses the operations inside he parentheses are computed first. */
