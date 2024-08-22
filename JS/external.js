@@ -147,6 +147,16 @@ console.log(NaN === NaN); // output: false, as NaN is unique and it is the only 
 console.log(typeof NaN); // output: number, the type of NaN is number
 
 
+// Comparison operators
+console.log(5 == 5); // equality operator
+console.log(5 === 5); // strict equality operator
+console.log(5 != 2); // non-equality operator
+console.log(5 !== 2); // strict non-equality operator
+console.log(5 < 5); // less than operator
+console.log(5 > 5); // greater than operator
+console.log(5 <= 5); // less than or equal to operator
+console.log(5 >= 5); // greater than or equal to operator
+
 // == vs ===
 console.log(5 == "5"); // output: true, changes the type of "5" from string to number then compares
 console.log(5 === "5"); // output: false
