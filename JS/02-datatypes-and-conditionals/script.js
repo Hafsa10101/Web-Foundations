@@ -190,3 +190,37 @@ if(marks >= 75){
 }else{
     console.log("Fail");
 }
+
+
+// Logical Operators
+// || (OR): if any one of the operator is true it returns true, it returns false only when both are false
+//  chain of OR || returns the first truthy value or the last one if no truthy value is found.
+// Sometimes, people use this feature to execute commands only if the condition on the left part is falsy.
+
+// && (AND): if any of the operator is false it returns false, it returns true only when both are true
+// chain of AND && returns the first falsy value or the last value if none were found.
+
+// (NOT) !: returns the inverse value
+//  double NOT !! is sometimes used for converting a value to boolean type
+// he first NOT converts the value to boolean and returns the inverse, and the second NOT inverses it again. In the end, we have a plain value-to-boolean conversion.
+// double NOT !! works the same as Boolean() method.
+
+// (Nullish Coalescing) ??
+
+//The precedence of NOT ! is the highest of all logical operators, so it always executes first, before && or ||.
+// Precedence of AND && is higher than OR ||
+
+// Check the login exercise
+// if(user === "Admin"){
+//     if(password === "TheMaster"){
+//         console.log("Welcome!");
+//     }else if(password === "" || password === null){
+//         console.log("Cancelled");
+//     }else{
+//         console.log("Wrong passwords");
+//     }
+// }else if(user === "" || user === null){
+//     console.log("Cancelled");
+// }else{
+//     console.log("I don't know you");
+// }
