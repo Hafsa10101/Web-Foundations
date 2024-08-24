@@ -168,3 +168,25 @@ console.log(text.split(","));
 
 console.log(str.split(""));
 
+
+// Conditionals in Js
+// Conditional statements are used to perform different actions based on different conditions. They allow your code to make decisions and execute certain blocks of code only when specific conditions are met.
+
+// if-else
+age = 18;
+
+if(age >= 18){
+    console.log("Congratulations, you are an adult!");
+}else{
+    console.log("Go back to your mommy kid!");
+}
+
+// if-else if-else
+let marks = 85;
+if(marks >= 75){
+    console.log("Distinction");
+}else if(marks >= 50){
+    console.log("Pass");
+}else{
+    console.log("Fail");
+}
