@@ -150,6 +150,7 @@ console.log(typeof NaN); // output: number, the type of NaN is number
 
 
 // Comparison operators
+// All comparison operators return a boolean value.
 console.log(5 == 5); // equality operator
 console.log(5 === 5); // strict equality operator
 console.log(5 != 2); // non-equality operator
@@ -159,7 +160,15 @@ console.log(5 > 5); // greater than operator
 console.log(5 <= 5); // less than or equal to operator
 console.log(5 >= 5); // greater than or equal to operator
 
+// in js strings are compared letter-by-letter in the “dictionary” order.
+// A capital letter "A" is not equal to the lowercase "a".
+// and lowercase a is > then uppercase A, because lowercase character has a greater index in the internal encoding table JavaScript uses (Unicode).
+console.log('Z' > 'A'); // output: true
+console.log('Glow' > 'Glee'); // output: true
+console.log('Bee' > 'Be'); // output: true
+
 // == vs ===
+// == can not differentiate between 0 from false
 console.log(5 == "5"); // output: true, changes the type of "5" from string to number then compares
 console.log(5 === "5"); // output: false
 
@@ -169,7 +178,8 @@ console.log(1 === true);
 /* == (Equality Operator): Compares two values for equality, but it coerces (changes) their types if they are different.
 === (Strict Equality Operator): Compares two values for equality without changing their types. Both the value and type must be the same. */
 // Note: Comparing two Js object will always return false, doesn't matters if we use == or ===.
-
+// The values null and undefined equal == each other and do not equal any other value.
+// > < >= <= these comparison operators convert null to 0 and undefined to NaN.
 
 // useful methods for numbers
 // toFixed(): used to round numbers to a fixed number of decimal places
