@@ -231,6 +231,7 @@ if(marks >= 75){
 
 
 // switch
+// switch does strict equality check of the var and the case values.
 let dayNum = 1;
 
 switch(dayNum){
@@ -257,6 +258,27 @@ switch(dayNum){
         break;
     default:
         console.log("Invalid Number");
+}
+
+// grouping cases
+let number = 1;
+
+switch(number){
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 9:
+        console.log("Odd");
+        break;
+    case 2:
+    case 4:
+    case 6:
+    case 8:
+        console.log("Even");
+        break;
+    default:
+        console.log("Only numbers between 1 - 9.")
 }
 
 // Ternary operator: same like if-else
