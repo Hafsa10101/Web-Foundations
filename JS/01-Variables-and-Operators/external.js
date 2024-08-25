@@ -151,6 +151,7 @@ console.log(typeof NaN); // output: number, the type of NaN is number
 
 // Comparison operators
 // All comparison operators return a boolean value.
+// Any value that is not false, undefined, null, 0, NaN, or an empty string ('') actually returns true
 console.log(5 == 5); // equality operator
 console.log(5 === 5); // strict equality operator
 console.log(5 != 2); // non-equality operator
