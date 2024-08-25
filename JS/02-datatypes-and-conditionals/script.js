@@ -173,6 +173,10 @@ console.log(str.split(""));
 // Conditional statements are used to perform different actions based on different conditions. They allow your code to make decisions and execute certain blocks of code only when specific conditions are met.
 
 // if-else
+// The if (…) statement evaluates the expression in its parentheses and converts the result to a boolean.
+// A number 0, an empty string "", null, undefined, and NaN all become false. Because of that they are called “falsy” values.
+// Other values become true, so they are called “truthy”.
+
 age = 18;
 
 if(age >= 18){
@@ -254,3 +258,20 @@ switch(dayNum){
     default:
         console.log("Invalid Number");
 }
+
+// Ternary operator: same like if-else
+// condition ? run this code : run this code instead
+age >= 18 ? console.log("Congratulations, you are an adult!") : console.log("Go back to your mommy kid!");
+
+let isBirthday = true;
+const greet = isBirthday
+  ? "Happy birthday Mrs. Smith — we hope you have a great day!"
+  : "Good morning Mrs. Smith.";
+
+console.log(greet);
+
+// mul ?: A sequence of question mark operators ? can return a value that depends on more than one condition.
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
